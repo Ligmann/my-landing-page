@@ -1,0 +1,56 @@
+@import "../scss/base";
+
+.socjal-media {
+  position: relative;
+  @media (max-width: 1145px) {
+    display: block;
+  }
+  &__social-media-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 4%;
+    @media (max-width: 1145px) {
+      position: inherit;
+      width: 100%;
+      height: max-content;
+      justify-content: inherit;
+      align-content: inherit;
+      flex-flow: inherit;
+      margin-top: 50px;
+      right: inherit;
+    }
+  }
+  &__social-media-box {
+    padding: 23px 18px;
+    border-radius: 4px;
+    background-color: $violet;
+    color: $white;
+    @media (max-width: 1145px) {
+      display: flex;
+      width: max-content;
+      padding: 18px 23px;
+    }
+  }
+  &__social-media-wraper-icon {
+    display: flex;
+    color: $white;
+    font-size: 1.7em;
+    text-decoration: none;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 1145px) {
+      margin-bottom: 0;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

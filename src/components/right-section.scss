@@ -1,0 +1,13 @@
+@import "../scss/base";
+
+.right-section {
+  position: relative;
+  height: 100%;
+  &__image {
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 983px) {
+    display: none;
+  }
+}
