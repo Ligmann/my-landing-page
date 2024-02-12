@@ -1,0 +1,92 @@
+@import "../scss/base";
+
+.my-description {
+  padding: 10em 4em 10em 7em;
+  @media (max-width: 1560px) {
+    padding: 10em 3em 10em 6em;
+    font-size: .9em;
+  }
+  @media (max-width: 1350px) {
+    font-size: .86em;
+  }
+  @media (max-width: 1293px) {
+    padding: 10em 3em 10em 4.5em;
+  }
+  &__heading {
+    margin: 0;
+    font-size: 4.3em;
+    letter-spacing: .06em;
+    font-weight: 700;
+    text-transform: uppercase;
+    @media (max-width: 1042px) {
+      font-size: 3.8em;
+    }
+  }
+  &__heading-colors-name {
+    display: inline-block;
+    padding-left: 22px;
+    color:$violet;
+    @media (max-width: 1042px) {
+      padding-left: 18px;
+    }
+  }
+  &__after-heading {
+    display: block;
+  }
+  &__job {
+    display: block;
+    width: max-content;
+    padding: 10px 13px;
+    border-radius: 4px;
+    margin:28px 0 30px;
+    background-color: $violet;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
+
+  }
+}
+.contakt {
+  margin-top: 100px;
+  @media (max-width: 1145px) {
+    margin-top: 80px;
+  }
+  &__heading {
+    margin: 0 0 13px;
+    font-size: 1.3em;
+    letter-spacing: .06em;
+    font-weight: 500;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding-right: 40px;
+    color: $violet;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  &__icons-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:12px;
+  }
+  &__icons {
+    font-size: 1.2em;
+  }
+  &__text {
+    font-weight: 500;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px;
+      margin-top: 3px;
+      background-color: $violet;
+    }
+  }
+}
